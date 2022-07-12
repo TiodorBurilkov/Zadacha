@@ -37,6 +37,8 @@ public class Main{
         double area=quadrilateralCalculations.area(quadrilateral, sinus);
         System.out.println("Area is " + area);
 
+
+        
     }
 }
 
