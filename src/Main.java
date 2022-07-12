@@ -35,9 +35,11 @@ public class Main {
         System.out.println("Enter the value of sinus ");
         sinus= scanner.nextInt();
         double area=quadrilateralCalculations.area(quadrilateral, sinus);
-        System.out.println("Area is " + area);
+         System.out.println("Area is " + area);
 
-    }
+
+
+     }
 }
 
 
