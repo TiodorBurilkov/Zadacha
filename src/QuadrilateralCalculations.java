@@ -15,6 +15,7 @@ public class QuadrilateralCalculations {
       return ab+bc+cd+da;
 
     }
+
     public double area(Quadrilateral quadrilateral, double sinus){
         Point a=quadrilateral.getA();
         Point b=quadrilateral.getB();
