@@ -29,18 +29,16 @@ public class Main{
 
         Quadrilateral quadrilateral= new Quadrilateral(pointA, pointB, pointC,pointD);
         QuadrilateralCalculations quadrilateralCalculations = new QuadrilateralCalculations();
+        QuadrilateralDistance quadrilateralDistance = new QuadrilateralDistance();
         double perimeter=quadrilateralCalculations.perimeter(quadrilateral);
         System.out.println("Perimeter is " + perimeter);
 
         System.out.println("Enter the value of sinus ");
         sinus= scanner.nextInt();
         double area=quadrilateralCalculations.area(quadrilateral, sinus);
-         System.out.println("Area is " + area);
+        System.out.println("Area is " + area);
 
 
 
-     }
+    }
 }
-
-
-
