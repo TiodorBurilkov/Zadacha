@@ -1,5 +1,5 @@
 public class Point {
-    private int x= 1;
+    private int x = 1;
     private int y = 1;
 
     public Point(int x, int y) {
