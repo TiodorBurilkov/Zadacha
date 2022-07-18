@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main{
+public class Main {
 
     public static void main(String[] args) {
 
@@ -27,20 +27,16 @@ public class Main{
         pointD.setX(scanner.nextInt());
         pointD.setY(scanner.nextInt());
 
-        Quadrilateral quadrilateral= new Quadrilateral(pointA, pointB, pointC,pointD);
+        Quadrilateral quadrilateral = new Quadrilateral(pointA, pointB, pointC, pointD);
         QuadrilateralCalculations quadrilateralCalculations = new QuadrilateralCalculations();
-        double perimeter=quadrilateralCalculations.perimeter(quadrilateral);
+        QuadrilateralDistance quadrilateralDistance = new QuadrilateralDistance();
+        double perimeter = quadrilateralCalculations.perimeter(quadrilateral);
         System.out.println("Perimeter is " + perimeter);
 
         System.out.println("Enter the value of sinus ");
-        sinus= scanner.nextInt();
-        double area=quadrilateralCalculations.area(quadrilateral, sinus);
-         System.out.println("Area is " + area);
+        sinus = scanner.nextInt();
+        double area = quadrilateralCalculations.area(quadrilateral, sinus);
+        System.out.println("Area is " + area);
 
-
-
-     }
+    }
 }
-
-
-

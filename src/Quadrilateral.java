@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Quadrilateral  {
-private Point a;
-private Point b;
-private Point c;
-private Point d;
+public class Quadrilateral {
+    private Point a;
+    private Point b;
+    private Point c;
+    private Point d;
 
     public Quadrilateral(Point a, Point b, Point c, Point d) {
         this.a = a;
