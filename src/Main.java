@@ -1,8 +1,12 @@
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+        Logger logger = LogManager.getLogger(Main.class);
 
         Scanner scanner = new Scanner(System.in);
         Point pointA = new Point();
@@ -11,19 +15,19 @@ public class Main {
         Point pointD = new Point();
         double sinus = 0;
 
-        System.out.println("Enter the coordinates of A ");
+        logger.info("Enter the coordinates of A");
         pointA.setX(scanner.nextInt());
         pointA.setY(scanner.nextInt());
 
-        System.out.println("Enter the coordinates of B ");
+        logger.info("Enter the coordinates of B");
         pointB.setX(scanner.nextInt());
         pointB.setY(scanner.nextInt());
 
-        System.out.println("Enter the coordinates of C ");
+        logger.info("Enter the coordinates of C");
         pointC.setX(scanner.nextInt());
         pointC.setY(scanner.nextInt());
 
-        System.out.println("Enter the coordinates of D ");
+        logger.info("Enter the coordinates of D");
         pointD.setX(scanner.nextInt());
         pointD.setY(scanner.nextInt());
 
@@ -31,12 +35,13 @@ public class Main {
         QuadrilateralCalculations quadrilateralCalculations = new QuadrilateralCalculations();
         QuadrilateralDistance quadrilateralDistance = new QuadrilateralDistance();
         double perimeter = quadrilateralCalculations.perimeter(quadrilateral);
-        System.out.println("Perimeter is " + perimeter);
 
-        System.out.println("Enter the value of sinus ");
+        logger.info("Perimeter is  " + perimeter);
+
+        logger.info("Enter the value of sinus ");
         sinus = scanner.nextInt();
         double area = quadrilateralCalculations.area(quadrilateral, sinus);
-        System.out.println("Area is " + area);
+        logger.info("Area is  " + area);
 
 
     }
