@@ -1,3 +1,4 @@
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -6,6 +7,8 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        BasicConfigurator.configure();
+
         Logger logger = LogManager.getLogger(Main.class);
 
         Scanner scanner = new Scanner(System.in);
@@ -18,7 +21,6 @@ public class Main {
         logger.info("Enter the coordinates of A");
         pointA.setX(scanner.nextInt());
         pointA.setY(scanner.nextInt());
-
         logger.info("Enter the coordinates of B");
         pointB.setX(scanner.nextInt());
         pointB.setY(scanner.nextInt());
@@ -37,6 +39,7 @@ public class Main {
         double perimeter = quadrilateralCalculations.perimeter(quadrilateral);
 
         logger.info("Perimeter is  " + perimeter);
+
 
         logger.info("Enter the value of sinus ");
         sinus = scanner.nextInt();
