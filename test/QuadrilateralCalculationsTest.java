@@ -24,6 +24,6 @@ class QuadrilateralCalculationsTest {
     void area() {
         QuadrilateralCalculations quadrilateralCalculations = new QuadrilateralCalculations();
         double area = Math.round(quadrilateralCalculations.area(test, sinus) * 100) / 100;
-        assertEquals(15  , area);
+        assertEquals(15, area);
     }
 }
