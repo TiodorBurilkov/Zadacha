@@ -1,8 +1,0 @@
-0 [main]  INFO (Main.java:21) - Enter the coordinates of A
-1375 [main]  INFO (Main.java:24) - Enter the coordinates of B
-2274 [main]  INFO (Main.java:28) - Enter the coordinates of C
-3207 [main]  INFO (Main.java:32) - Enter the coordinates of D
-4898 [main]  INFO (Main.java:41) - Perimeter is  16.970562748477143
-4898 [main] ERROR (Main.java:42) - Error
-4898 [main]  INFO (Main.java:45) - Enter the value of sinus 
-5870 [main]  INFO (Main.java:48) - Area is  16.000000000000004
